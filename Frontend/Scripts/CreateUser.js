@@ -27,7 +27,7 @@ registerForm.addEventListener("submit", async (e) => {
 
 
     //! send newUser to Database
-    await fetch("https://js-crud-project.onrender.com", {
+    await fetch("https://js-crud-project.onrender.com/users", {
         method: "POST",
         body: JSON.stringify(newUser),
         headers: {
