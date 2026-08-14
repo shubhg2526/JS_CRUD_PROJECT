@@ -48,7 +48,7 @@ function displayUsers(users) {
 async function deleteUser(id) {
     // console.log("Delete this user", id);
 
-    await fetch(`http://localhost:5000/users/${id}`, {
+    await fetch(`https://js-crud-project.onrender.com/users/${id}`, {
         method: "DELETE"
     });
 
