@@ -13,7 +13,7 @@ async function getEditUser() {
     // let id = params.get("id");
     // console.log(id);
 
-    let resp = await fetch(`http://localhost:5000/users/${id}`);
+    let resp = await fetch(`https://js-crud-project.onrender.com/users/${id}`);
     // console.log(resp);
 
     let data = await resp.json();
@@ -39,7 +39,7 @@ editForm.addEventListener("submit", async (e) => {
         password: passwordInput.value
     };
 
-    await fetch(`http://localhost:5000/users/${id}`, {
+    await fetch(`https://js-crud-project.onrender.com/users/${id}`, {
         method: "PUT",
         body: JSON.stringify(updatedData),
         headers: {

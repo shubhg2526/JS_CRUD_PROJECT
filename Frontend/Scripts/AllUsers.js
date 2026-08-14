@@ -3,7 +3,7 @@ console.log(usersContainer);
 
 async function getAllUsers() {
     try {
-        let resp = await fetch("http://localhost:5000/users");
+        let resp = await fetch("https://js-crud-project.onrender.com");
         let data = await resp.json();
         // console.log(data);
         displayUsers(data);
